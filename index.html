@@ -23,6 +23,7 @@
     <div class="navbar container">
       <nav class="column-full">
         <span class="app">Code Journal</span>
+        <a href="#" data-view="entries" class="nav-item" id="nav-item">Entries</a>
       </nav>
     </div>
   </header>
@@ -31,7 +32,7 @@
       <form id="code-notes">
         <div class="row">
           <div class="column-full">
-            <h1>Edit Profile</h1>
+            <h1>New Entry</h1>
           </div>
         </div>
         <div class="row">
@@ -56,7 +57,20 @@
         </div>
       </form>
     </div>
-    <!--<div data-view="entries" class="hidden"></div>-->
+    <div data-view="entries" class="hidden">
+      <div class="row">
+        <div class="entries-header column-full">
+          <h1>Entries</h1>
+          <a href="#" data-view="entry-form" class="btn" id="new">NEW</a>
+        </div>
+      </div>
+      <div class="empty-message row">
+        <div class="column-full">
+          <p>No entries have been recorded.</p>
+        </div>
+      </div>
+      <ul id="journal-entries"></ul>
+    </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
